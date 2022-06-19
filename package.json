@@ -1,10 +1,11 @@
 {
-  "name": "recipes-app-test",
+  "name": "recipes-app",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": "16"
   },
+  "homepage": "recipes-app",
   "dependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -26,7 +27,9 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
-    "websocket-extensions": ">=0.1.4"
+    "websocket-extensions": ">=0.1.4",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "scripts": {
     "cy": "cypress run",
